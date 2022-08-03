@@ -1,0 +1,92 @@
+html, body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 1rem;
+    color: rgb(34, 4, 4);
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+.brand, .nav-link, a {
+    text-transform: uppercase;
+    color: rgb(34, 4, 4);
+}
+
+
+.brand {
+    font-size: 27px;
+}
+
+
+.senpai {
+    color: rgb(230, 0, 0);
+}
+
+.topnav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+.topnav .nav-link, a {
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 23px;
+}
+
+.dropdownIcon {
+    display: none;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$ MOBILE $$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+@media (max-width: 768px) {
+    ul.topnav li a.nav-link {
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    
+    ul.topnav.responsive {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    ul.topnav.responsive li {
+        position: relative;
+        top: 30px;
+        right: 30px;
+    }
+
+    ul.topnav.responsive li a.nav-link {
+        display: block;
+        line-height: 1.7;
+    }
+}
