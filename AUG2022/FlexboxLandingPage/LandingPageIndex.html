@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="LandingPageStyle.css" />
+    <title>My Landing Page</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand">Code<span class="senpai">Senpai</span></div>
+      <ul class="topnav" id="navbar-toggle">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">Products</a></li>
+        <li><a class="nav-link" href="#">About us</a></li>
+        <li><a class="nav-link" href="#">Contact</a></li>
+        <li class="dropdownIcon">
+          <a onclick="toggleDropdown()" href="#">&#9876;</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="headshot-wrapper">
+        <img class="headshot" src="BokoPic.jpg" alt="profile image" />
+        <h1>Boyan Koychev</h1>
+      </div>
+    </header>
+
+    <section class="services">
+      <div class="container">
+        <div class="media-object">
+          <div class="icon-wrapper">
+            <img class="icon" src="lineUpGraph.jpg" alt="graph chart" />
+          </div>
+          <div class="blurb-wrapper">
+            <h3 class="blurb-header">Scalable Code</h3>
+            <div class="blurb-info">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio dignissimos debitis animi! Velit, neque repellat
+              voluptates necessitatibus laboriosam at omnis!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
